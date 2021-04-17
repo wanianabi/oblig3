@@ -1,12 +1,12 @@
 package webprog.oblig3;
 
 public class Billetter {
-    private String film;
-    private String fornavn;
-    private String etternavn;
-    private String telefonnr;
-    private String epost;
-    private int antall;
+    private static String film;
+    private static String fornavn;
+    private static String etternavn;
+    private static String telefonnr;
+    private static String epost;
+    private static int antall;
 
     public Billetter(String film, String fornavn, String etternavn, String telefonnr, String epost, int antall){
         this.film = film;
@@ -20,7 +20,7 @@ public class Billetter {
     public Billetter (){
     }
 
-    public String getFilm(){
+    public static String getFilm(){
         return film;
     }
 
@@ -28,7 +28,7 @@ public class Billetter {
         this.film = film;
     }
 
-    public String getFornavn(){
+    public static String getFornavn(){
         return fornavn;
     }
 
@@ -36,7 +36,7 @@ public class Billetter {
         this.fornavn = fornavn;
     }
 
-    public String getEtternavn(){
+    public static String getEtternavn(){
         return etternavn;
     }
 
@@ -44,7 +44,7 @@ public class Billetter {
         this.etternavn = etternavn;
     }
 
-    public String getTelefonnr(){
+    public static String getTelefonnr(){
         return telefonnr;
     }
 
@@ -52,7 +52,7 @@ public class Billetter {
         this.telefonnr = telefonnr;
     }
 
-    public String getEpost(){
+    public static String getEpost(){
         return epost;
     }
 
@@ -60,10 +60,9 @@ public class Billetter {
         this.epost = epost;
     }
 
-    public int getAntall(){
+    public static int getAntall(){
         return antall;
     }
-
     public void setAntall(int antall){
         this.antall = antall;
     }
