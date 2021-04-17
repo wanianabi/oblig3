@@ -1,13 +1,13 @@
-Oblig X
+Oblig 3
 =======
-OsloMet brukernavn:
+OsloMet brukernavn: s348819
 
-GitHub brukernavn:
+GitHub brukernavn: wanianabi
 
-GitHub repo URL:
+GitHub repo URL: https://github.com/DATA1700/oblig-3-wanianabi
 
-URL til Heroku app:
+URL til Heroku app: 
 
-Fullt navn:
+Fullt navn: Wania Nabi
 
 Kort beskrivelse av applikasjon (5–10 setninger):

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Obligatorisk 2</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+<h1>Bestilling av kinobilletter</h1>
+Velg film:
+<select id="film">
+    <option>Velg film her</option>
+    <option>Istid 3</option>
+    <option>Interstellar</option>
+    <option>X-Men</option>
+</select>
+<small id="filmOut" class="form-text text-muted"></small>
+<br>
+<table>
+    <div class="form-group">
+        <label for="Antall">Antall:</label>
+        <input type="text" class="form-control" id="antall">
+        <small id="antallOut" class="form-text text-danger"></small>
+    </div>
+
+    <div class="form-group">
+        <label for="Fornavn">Fornavn:</label>
+        <input type="text" class="form-control" id="fornavn">
+        <small id="fornavnOut" class="form-text text-danger"></small>
+    </div>
+
+    <div class="form-group">
+        <label for="Etternavn">Etternavn:</label>
+        <input type="text" class="form-control" id="etternavn">
+        <small id="etternavnOut" class="form-text text-danger"></small>
+    </div>
+
+    <div class="form-group">
+        <label for="Telefonnr">Telefonnr:</label>
+        <input type="text" class="form-control" id="telefonnr">
+        <small id="telefonnrOut" class="form-text text-danger"></small>
+    </div>
+
+    <div class="form-group">
+        <label for="Epost">Epost:</label>
+        <input type="email" class="form-control" id="epost">
+        <small id="epostOut" class="form-text text-danger"></small>
+    </div>
+
+    <button onclick="kjopBillett()" class="btn btn-primary">Kjøp billett</button>
+</table>
+<h3>Alle billetter</h3>
+<div id="alleBilletter"></div>
+<button onclick="slettBilletter()" class="btn btn-danger">Slett alle billettene</button>
+</body>
+</html>
