@@ -15,7 +15,7 @@ public class Oblig3Controller {
     Oblig3Repository rep;
 
     @PostMapping("/lagre")
-    public void lagreKjop(Billetter innKjop){
+    public void kjopBillett(Billetter innKjop){
         rep.lagre(innKjop);
     }
     @GetMapping("/hentBilletter")

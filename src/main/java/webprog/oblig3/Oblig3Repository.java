@@ -15,8 +15,8 @@ public class Oblig3Repository {
 
     public void lagre(Billetter billett){
         String sql = "INSERT INTO Billetter (film,fornavn,etternavn,telefonnr,epost,antall) VALUES(?,?,?,?,?,?)";
-        db.update(sql,Billetter.getFilm(),Billetter.getFornavn(),Billetter.getEtternavn(),Billetter.getTelefonnr(),
-                Billetter.getEpost(),Billetter.getAntall());
+        db.update(sql,billett.getFilm(),billett.getFornavn(),billett.getEtternavn(),billett.getTelefonnr(),
+                billett.getEpost(),billett.getAntall());
     }
 
     public List<Billetter> hentBilletter(){
